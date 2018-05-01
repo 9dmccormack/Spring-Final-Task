@@ -14,7 +14,9 @@ function totals(list){
     let totalValue = 0;
     let totalTime = 0;
 
-    for(){
+    for(letd=0;d<list.length;d++){
+      totalValue=list[d].value+totalValue;
+      totalValue
 
     }
 
