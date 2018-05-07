@@ -79,9 +79,34 @@ function sortImpact(list){
     });
 
 }
+//imports code from other file
+const importTask = require("./task.js");
+const Task = new importTask();
+
+//this function allows us to vary how much we prioritize value and time.
+//These should be represented as decimals from 0 to 1
+// 0.55 ---means---> 55%
+
+function sortImpactCustom(list,pv,pt){
+  pv = .7;
+  pt = .3;
+
+  //check to make sure pv and pt add to 1, if not, return null.
 
 
-//this is the test code to see if your functions work
+  customImpact = (value*pv)/(time*pt);
+  function customImpact(task){
+
+
+  }
+
+  return list.sort(//**fill this with comparison function/);
+
+}
+
+
+
+
 function mainTest(n){
     let taskList = Task.Factory(n);
     //tests basic totals
